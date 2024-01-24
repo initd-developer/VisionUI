@@ -105,7 +105,7 @@ const flattenedRoutes: IAppRoute[] = routes.reduce(
 const AppRoutes = (): React.ReactElement => (
   <Switch>
     {flattenedRoutes.map(({ path, exact, component, title }, idx) => (
-      <RouteWithTitleUpdates path={path} exact={exact} component={component} key={idx} title={title} />
+      <RouteWithTitleUpdates path={path} exact={exact} component={component} key ={idx} title={title} />
     ))}
     <PageNotFound title="404 Page Not Found" />
   </Switch>
